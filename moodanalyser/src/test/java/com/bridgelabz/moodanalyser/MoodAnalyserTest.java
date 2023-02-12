@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
 public class MoodAnalyserTest {
 	@BeforeAll
 	static void show_msg_before_all_test_case() {
-		System.out.println("---Welcome to Mood Analyzer---");
+		System.out.println("Welcome to Mood Analyzer Program");
 	}
 
 	@AfterAll
@@ -34,6 +34,7 @@ public class MoodAnalyserTest {
 	public void moodAnalyser() {
 		String ans = object.moodAnalyser("I am in Sad Mood");
 		Assertions.assertEquals("SAD", ans);
+		;
 		System.out.println(ans);
 	}
 }
